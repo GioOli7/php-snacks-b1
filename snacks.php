@@ -82,4 +82,16 @@ PHP Snack 3 Bonus (solo come bonus e solo se completati i due precedenti)
 Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta
  -->
 
- 
+ <?php 
+$numbers = [];
+
+for ($i = 0; $i < 15; $i++) {
+    $rand = rand(1,20);
+    while(in_array($rand, $numbers)) {
+        $rand = rand(1,20);
+    }
+    $numbers[] = $rand;
+}
+
+var_dump($numbers)
+ ?>
