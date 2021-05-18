@@ -62,8 +62,8 @@ $name = $_GET['name'];
 $mail = $_GET['mail'];
 $age = $_GET['age'];
 
-if (strlen($name) < 3) {
-    echo 'ACCESSO NEGATO: il nome deve contenere almeno 3 caratteri';
+if (strlen($name) < 4) {
+    echo 'ACCESSO NEGATO: il nome deve contenere almeno 4 caratteri';
 }
 elseif ( strpos($mail, '@') === false || strpos($mail, '.') === false ) {
     echo 'ACCESSO NEGATO: la mail deve contenere la @ e il . al suo interno';
@@ -76,3 +76,10 @@ else {
 }
 
 ?>
+
+<!-- 
+PHP Snack 3 Bonus (solo come bonus e solo se completati i due precedenti)
+Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta
+ -->
+
+ 
